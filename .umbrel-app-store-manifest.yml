@@ -1,0 +1,7 @@
+apps:
+  - id: inscript-manager
+    name: Ordinarinos Inscription Manager
+    category: bitcoin
+    repository:
+      url: https://github.com/yourusername/inscriptiontools.git
+      version: master 
