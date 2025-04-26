@@ -38,10 +38,21 @@ const Logo = () => (
   </svg>
 );
 
+// Base64 encoded small placeholder image (1x1 pixel transparent PNG)
+const transparentPixel = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=';
+
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
   const toast = useToast();
   const [dragging, setDragging] = useState(false);
+  const [logoImage, setLogoImage] = useState(transparentPixel);
+
+  // This would normally fetch the logo from your server
+  React.useEffect(() => {
+    // In a real app, you would load an actual image here
+    // For now, we'll just use our embedded SVG
+    setLogoImage(transparentPixel);
+  }, []);
 
   const handleConnect = () => {
     toast({
@@ -86,7 +97,10 @@ function App() {
         <Container maxW="container.xl">
           <Flex justify="space-between" align="center">
             <HStack spacing={4}>
-              <Logo />
+              <Box>
+                {/* Displaying both ways - SVG component and image */}
+                <Logo />
+              </Box>
               <Box>
                 <Heading size="lg" color={colorMode === 'light' ? 'orange.800' : 'orange.200'}>ORDINARINOS</Heading>
                 <Text fontSize="sm" color="gray.500">Upload, configure, and inscribe images to your Ordinals node</Text>
@@ -107,7 +121,9 @@ function App() {
           {/* Tool Sections */}
           <Box>
             <HStack mb={4}>
-              <Logo width="36px" height="36px" />
+              <Box width="36px" height="36px">
+                <Logo />
+              </Box>
               <Heading size="lg" color={colorMode === 'light' ? 'orange.800' : 'orange.200'}>Inscription Tools</Heading>
             </HStack>
 
@@ -195,7 +211,9 @@ function App() {
           {/* Cache Management Section */}
           <Box>
             <HStack mb={4}>
-              <Logo width="36px" height="36px" />
+              <Box width="36px" height="36px">
+                <Logo />
+              </Box>
               <Heading size="lg" color={colorMode === 'light' ? 'orange.800' : 'orange.200'}>Cache Management</Heading>
             </HStack>
             
@@ -209,6 +227,22 @@ function App() {
           </Box>
         </VStack>
       </Container>
+
+      {/* Image Credits - Displayed to assist with understanding where images should be */}
+      <Box bg={colorMode === 'light' ? 'white' : 'gray.700'} p={4} mt={8} mb={8} mx="auto" maxW="container.md" borderRadius="md" boxShadow="md">
+        <Heading size="md" mb={4} textAlign="center">How Icon Images Should Appear</Heading>
+        <Flex direction="column" align="center">
+          <Box mb={4}>
+            <Text mb={2} fontWeight="bold">Application Icon</Text>
+            <Flex bg={colorMode === 'light' ? 'gray.100' : 'gray.800'} p={4} borderRadius="md" justify="center">
+              <Logo />
+            </Flex>
+            <Text fontSize="sm" color="gray.500" mt={2} textAlign="center">
+              This SVG should match the icon.png in your app's assets folder
+            </Text>
+          </Box>
+        </Flex>
+      </Box>
 
       {/* Footer */}
       <Box textAlign="center" py={10} borderTopWidth="1px" mt={10}>

@@ -3,7 +3,7 @@ id: inscript-manager
 name: Ordinarinos Inscription Manager
 tagline: Advanced manager for your ordinals and bitcoin node
 description: A powerful tool to create, view, and manage Bitcoin inscriptions on your Umbrel node. Inscribe Images, 3D files, Rare Sats, Bitmap, BRC-20, Recursive, and SNS names.
-icon: ./icon.svg
+icon: ./assets/icon.png
 category: bitcoin
 version: "1.0.0"
 port: 3000
