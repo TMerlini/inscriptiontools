@@ -15,7 +15,7 @@ apps:
       - https://raw.githubusercontent.com/TMerlini/inscriptiontools/main/gallery/01.png
       - https://raw.githubusercontent.com/TMerlini/inscriptiontools/main/gallery/02.png
       - https://raw.githubusercontent.com/TMerlini/inscriptiontools/main/gallery/03.png
-  - id: ordinarinos-inscriptions
+  - id: bitcoin-ordinals-ordinarinos-inscriptions
     name: Ordinarinos Inscriber
     icon: https://i.imgur.com/akOQAkr.png
     developer: Merlini
@@ -25,4 +25,4 @@ apps:
     gallery:
       - https://raw.githubusercontent.com/TMerlini/inscriptiontools/main/gallery/01.png
       - https://raw.githubusercontent.com/TMerlini/inscriptiontools/main/gallery/02.png
-      - https://raw.githubusercontent.com/TMerlini/inscriptiontools/main/gallery/03.png 
+      - https://raw.githubusercontent.com/TMerlini/inscriptiontools/main/gallery/03.png
