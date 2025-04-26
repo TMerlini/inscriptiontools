@@ -1,8 +1,8 @@
 manifestVersion: 1
 id: bitcoin-ordinals-inscriptiontools
-name: Inscription Tools
+name: Ordinarinos Inscription Tools
 tagline: A Bitcoin Ordinals Inscription Manager
-icon: https://imgur.com/akOQAkr
+icon: https://i.imgur.com/akOQAkr.png
 category: Bitcoin
 version: "1.0.0"
 port: 3000
@@ -28,13 +28,14 @@ submitter: Merlini
 repo: https://github.com/Merlini/inscriptiontools
 support: https://github.com/Merlini/inscriptiontools/issues
 gallery:
-  - https://raw.githubusercontent.com/Merlini/inscriptiontools/main/gallery/01.png
-  - https://raw.githubusercontent.com/Merlini/inscriptiontools/main/gallery/02.png
-  - https://raw.githubusercontent.com/Merlini/inscriptiontools/main/gallery/03.png
+  - https://raw.githubusercontent.com/TMerlini/inscriptiontools/refs/heads/main/gallery/01.png
+  - https://raw.githubusercontent.com/TMerlini/inscriptiontools/refs/heads/main/gallery/02.png
+  - https://raw.githubusercontent.com/TMerlini/inscriptiontools/refs/heads/main/gallery/03.png
 releaseNotes: >-
   Initial release of Inscription Tools for Umbrel. This version includes basic inscription management capabilities, wallet integration, and a clean user interface for working with Bitcoin Ordinals.
 dependencies:
   - bitcoin
+  - ordinals
 path: ""
 defaultUsername: ""
 defaultPassword: "" 
