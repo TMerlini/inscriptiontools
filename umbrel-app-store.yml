@@ -2,13 +2,15 @@ id: bitcoin-ordinals
 name: Ordinarinos
 version: "1.0.0"
 description: A collection of tools for Bitcoin Ordinals inscriptions
-icon: https://imgur.com/akOQAkr
+icon: https://i.imgur.com/akOQAkr.png
 developer: Merlini
 website: https://github.com/Merlini/inscriptiontools
 repo: https://github.com/Merlini/inscriptiontools
 support: https://github.com/Merlini/inscriptiontools/issues
 gallery:
-  - https://i.imgur.com/placeholder1.png
+  - https://raw.githubusercontent.com/Merlini/inscriptiontools/main/gallery/01.png
+  - https://raw.githubusercontent.com/Merlini/inscriptiontools/main/gallery/02.png
+  - https://raw.githubusercontent.com/Merlini/inscriptiontools/main/gallery/03.png
 
 apps:
   - id: bitcoin-ordinals-inscriptiontools

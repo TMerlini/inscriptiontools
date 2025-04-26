@@ -28,9 +28,9 @@ submitter: Merlini
 repo: https://github.com/Merlini/inscriptiontools
 support: https://github.com/Merlini/inscriptiontools/issues
 gallery:
-  - https://imgur.com/FmUZ2S6
-  - https://imgur.com/LQoRo45
-  - https://imgur.com/107G5qk
+  - https://raw.githubusercontent.com/Merlini/inscriptiontools/main/gallery/01.png
+  - https://raw.githubusercontent.com/Merlini/inscriptiontools/main/gallery/02.png
+  - https://raw.githubusercontent.com/Merlini/inscriptiontools/main/gallery/03.png
 releaseNotes: >-
   Initial release of Inscription Tools for Umbrel. This version includes basic inscription management capabilities, wallet integration, and a clean user interface for working with Bitcoin Ordinals.
 dependencies:
