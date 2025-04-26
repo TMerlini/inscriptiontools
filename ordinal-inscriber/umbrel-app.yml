@@ -1,19 +1,28 @@
 id: ordinal-inscriber
 name: Ordinal Inscriber
+version: "1.0.0"
 tagline: Create and manage Bitcoin Ordinals inscriptions
 description: >-
   A powerful tool for creating, managing, and exploring Bitcoin Ordinals 
   inscriptions directly from your Umbrel. Connect to your Bitcoin and 
   Ordinals nodes to create inscriptions without relying on external services.
-developer: Community
-website: https://github.com/ordinalsbot/ordinarinos
+releaseNotes: >-
+  Initial release of the Ordinal Inscriber app for Umbrel.
+  Features include:
+  - Connection to your Bitcoin and Ordinals nodes
+  - Creation of various inscription types
+  - Management of existing inscriptions
+developer: TMerlini
+website: https://github.com/TMerlini/inscriptiontools
 dependencies:
   - bitcoin
   - ordinals
-repo: https://github.com/ordinalsbot/ordinarinos
-support: https://github.com/ordinalsbot/ordinarinos/issues
+repo: https://github.com/TMerlini/inscriptiontools
+support: https://github.com/TMerlini/inscriptiontools/issues
 port: 3563
 category: bitcoin
 path: ""
 defaultUsername: ""
-defaultPassword: "" 
+defaultPassword: ""
+submitter: TMerlini
+submission: https://github.com/TMerlini/inscriptiontools.git 

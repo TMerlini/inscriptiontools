@@ -1,14 +1,19 @@
 version: '3.7'
 
 services:
+  app_proxy:
+    environment:
+      # ordinal-inscriber_ordinarinos_1
+      APP_HOST: ordinal-inscriber_ordinarinos_1
+      APP_PORT: 3563
+    
   ordinarinos:
     build:
       context: .
       dockerfile: Dockerfile
     container_name: ordinalinscriber-ordinarinos-1
     restart: unless-stopped
-    ports:
-      - "${APP_PORT}:3563"
+    stop_grace_period: 1m
     volumes:
       - ${APP_DATA_DIR}/cache:/app/cache
     environment:
@@ -69,21 +74,21 @@ services:
       - VERBOSE_LOGGING=true
       - LOG_LEVEL=debug
       
-    networks:
-      - default
-    # Increase Docker healthcheck timeout
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3563/health"]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 60s
-    # Add host mappings for container communication
     extra_hosts:
       - "ordinals_ord_1:10.21.0.12"
       - "ordinals_app_proxy_1:10.21.0.13"
       - "bitcoin_bitcoind_1:10.21.21.8"
       - "bitcoin.embassy:10.21.21.8"
+
+volumes:
+  cache:
+    driver: local
 
 networks:
   default:
