@@ -1,4 +1,0 @@
-#!/bin/bash
-
-export APP_ORDINAL_INSCRIBER_IP="10.21.0.30"
-export APP_ORDINAL_INSCRIBER_PORT="3563" 
