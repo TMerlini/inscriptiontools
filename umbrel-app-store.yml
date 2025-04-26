@@ -1,5 +1,5 @@
 id: bitcoin-ordinals
-name: Bitcoin Ordinals Tools
+name: Ordinarinos
 version: "1.0.0"
 description: A collection of tools for Bitcoin Ordinals inscriptions
 icon: https://raw.githubusercontent.com/TMerlini/inscriptiontools/main/icon.png
