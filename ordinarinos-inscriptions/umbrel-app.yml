@@ -26,12 +26,12 @@ description: >-
 developer: Ordinarinos
 website: https://ordinarinos.com
 submitter: Merlini
-repo: https://github.com/TMerlini/OrdinalInscriber
-support: https://github.com/TMerlini/OrdinalInscriber/issues
+repo: https://github.com/TMerlini/inscriptiontools
+support: https://github.com/TMerlini/inscriptiontools/issues
 gallery:
-  - https://raw.githubusercontent.com/TMerlini/inscriptiontools/refs/heads/main/gallery/01.png
-  - https://raw.githubusercontent.com/TMerlini/inscriptiontools/refs/heads/main/gallery/02.png
-  - https://raw.githubusercontent.com/TMerlini/inscriptiontools/refs/heads/main/gallery/03.png
+  - https://raw.githubusercontent.com/TMerlini/inscriptiontools/main/gallery/01.png
+  - https://raw.githubusercontent.com/TMerlini/inscriptiontools/main/gallery/02.png
+  - https://raw.githubusercontent.com/TMerlini/inscriptiontools/main/gallery/03.png
 releaseNotes: >-
   Initial release of Ordinarinos for Umbrel. This version includes a complete interface for inscribing 
   Ordinals on Bitcoin, with fee calculation, wallet management, and a user-friendly inscription process.
