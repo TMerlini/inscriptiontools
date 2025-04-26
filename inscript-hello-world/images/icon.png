@@ -1,0 +1,7 @@
+# This is a placeholder for the icon.png file
+# You should replace this with an actual PNG image file
+# The icon should be 400x400 pixels for best compatibility with Umbrel
+
+# Note: Since we can't directly create binary files through this interface,
+# you'll need to manually add an icon.png file to the images directory.
+# You can use any Bitcoin/Ordinals-themed icon of your choice. 

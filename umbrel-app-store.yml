@@ -1,3 +1,7 @@
-id: inscript
-name: Inscription Tools Store
-icon: https://raw.githubusercontent.com/getumbrel/umbrel-apps/master/bitcoin/icon.svg 
+id: inscriptiontools
+name: Inscription Tools
+description: A collection of tools for Bitcoin Ordinals inscriptions
+icon: https://github.com/yourusername/inscriptiontools/blob/main/icon.png
+
+apps:
+  - inscript-hello-world 
