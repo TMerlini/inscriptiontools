@@ -1,7 +1,7 @@
-id: inscriptiontools
+id: Bitcoin
 name: Inscription Tools
 description: A collection of tools for Bitcoin Ordinals inscriptions
 icon: https://github.com/yourusername/inscriptiontools/blob/main/icon.png
 
 apps:
-  - inscript-hello-world 
+  - ordinal-inscriber 
