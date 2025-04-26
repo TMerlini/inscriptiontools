@@ -14,8 +14,6 @@ gallery:
 
 apps:
   - id: bitcoin-ordinals-inscriptiontools
-    name: Inscription Tools
-    repo: https://github.com/TMerlini/inscriptiontools
+    name: Inscription Tools 
   - id: ordinarinos-inscriptions
-    name: Ordinarinos Inscriber
-    repo: https://github.com/TMerlini/inscriptiontools/tree/main/OrdinalInscriber 
+    name: Ordinarinos Inscriber 

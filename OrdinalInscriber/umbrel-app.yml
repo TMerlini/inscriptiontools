@@ -41,26 +41,3 @@ dependencies:
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-
-containers:
-  - image: "{APP_ID}"
-    entrypoint: "/usr/local/bin/start-umbrel.sh"
-    environment:
-      DIRECT_CONNECT: true
-      BTC_SERVER_AVAILABLE: true
-      ORD_SERVER_AVAILABLE: true
-      BTC_RPC_USER: "$BITCOIN_RPC_USER"
-      BTC_RPC_PASSWORD: "$BITCOIN_RPC_PASS"
-      BTC_RPC_HOST: "${APP_BITCOIN_NODE_IP:-bitcoin.embassy}"
-      BTC_RPC_PORT: 8332
-      ORD_RPC_HOST: "ordinals_ord_1"
-      ORD_RPC_PORT: 80
-      NODE_ENV: "production"
-      PORT: 3500
-    mounts:
-      - source: data
-        target: /ord/data
-    ports:
-      - target: 3500
-        protocol: tcp
-    stop_grace_period: 1m
