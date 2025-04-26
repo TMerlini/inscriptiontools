@@ -14,6 +14,6 @@ gallery:
 
 apps:
   - id: bitcoin-ordinals-inscriptiontools
-    name: Inscription Tools 
+    name: Inscription Tools
   - id: ordinarinos-inscriptions
     name: Ordinarinos Inscriber 
