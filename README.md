@@ -1,22 +1,41 @@
-# Community Store App for Umbrel OS
+# Inscription Tools - Umbrel Community App Store
 
-This is a community store application designed to run on Umbrel OS in a Synology NAS environment.
+This repository contains a Community App Store for Umbrel OS, focusing on Bitcoin Ordinals inscription tools.
 
-## Features
-- Browse community-submitted apps
-- Install applications directly to your Umbrel instance
-- Manage installed applications
+## Apps Included
 
-## Setup
-1. Clone this repository to your Umbrel OS environment
-2. Follow the installation instructions in the documentation
-3. Access the store through your Umbrel dashboard
+### Inscription Manager
+A simple tool to create, view, and manage Bitcoin inscriptions on your Umbrel node.
+
+## Installation
+
+To add this app store to your Umbrel:
+
+1. In your Umbrel OS interface, go to the App Store page
+2. Click on "Add Community App Store"
+3. Enter the URL of this GitHub repository
+4. The store and its apps will be available for installation
 
 ## Development
-This application uses:
-- Frontend: React.js
-- Backend: Node.js
-- Docker for containerization
+
+Each app in this store follows the Umbrel app structure:
+
+- `umbrel-app-store.yml` - Defines the app store metadata
+- Each app has its own directory with:
+  - `umbrel-app.yml` - App metadata
+  - `docker-compose.yml` - Container configuration
+
+## Structure
+
+```
+.
+├── inscript-manager/            # Inscription Manager app
+│   ├── docker-compose.yml       # Container configuration
+│   ├── umbrel-app.yml           # App metadata
+│   └── web/                     # Web app source code
+└── umbrel-app-store.yml         # App store metadata
+```
 
 ## License
+
 See the LICENSE file for details. 
