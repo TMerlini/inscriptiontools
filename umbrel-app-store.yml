@@ -1,16 +1,15 @@
-id: Bitcoin-Ordinals
-name: Inscription Tools
+id: bitcoin-ordinals
+name: Bitcoin Ordinals Tools
 version: "1.0.0"
 description: A collection of tools for Bitcoin Ordinals inscriptions
 icon: https://raw.githubusercontent.com/TMerlini/inscriptiontools/main/icon.png
-developer: Community
-website: https://github.com/TMerlini/inscriptiontools
-repo: https://github.com/TMerlini/inscriptiontools  
-support: https://github.com/TMerlini/inscriptiontools/issues
+developer: Merlini
+website: https://github.com/Merlini/inscriptiontools
+repo: https://github.com/Merlini/inscriptiontools
+support: https://github.com/Merlini/inscriptiontools/issues
 gallery:
-  - https://raw.githubusercontent.com/TMerlini/inscriptiontools/main/gallery/01.png
-  - https://raw.githubusercontent.com/TMerlini/inscriptiontools/main/gallery/02.png
-  - https://raw.githubusercontent.com/TMerlini/inscriptiontools/main/gallery/03.png
+  - https://i.imgur.com/placeholder1.png
 
 apps:
-  - ordinal-inscriber 
+  - id: bitcoin-ordinals-inscriptiontools
+    name: Inscription Tools 

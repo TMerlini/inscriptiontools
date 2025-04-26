@@ -1,0 +1,40 @@
+manifestVersion: 1
+id: bitcoin-ordinals-inscriptiontools
+name: Inscription Tools
+tagline: A Bitcoin Ordinals Inscription Manager
+icon: https://static.vecteezy.com/system/resources/previews/022/101/069/original/bitcoin-logo-transparent-background-free-png.png
+category: Bitcoin
+version: "1.0.0"
+port: 3000
+description: >-
+  Inscription Tools is a powerful and user-friendly Bitcoin Ordinals manager that allows you to create, manage, and explore Bitcoin Ordinals inscriptions right from your Umbrel node.
+
+
+  With an intuitive interface designed for both beginners and advanced Bitcoin users, Inscription Tools makes it easy to work with Bitcoin Ordinals without requiring extensive technical knowledge. Connect directly to your Bitcoin node to create inscriptions, manage your wallet, and browse your Ordinals collection.
+
+
+  Key features include:
+  - Simple inscription creation with support for various file types
+  - Direct integration with your Bitcoin node
+  - Secure, self-hosted experience with full control of your data
+  - Real-time monitoring of your Ordinals collection
+  - Detailed inscription viewer with metadata display
+
+
+  Inscription Tools helps you participate in the growing Bitcoin Ordinals ecosystem while maintaining the security and sovereignty of running your own node.
+developer: Merlini
+website: https://github.com/Merlini/inscriptiontools
+submitter: Merlini
+repo: https://github.com/Merlini/inscriptiontools
+support: https://github.com/Merlini/inscriptiontools/issues
+gallery:
+  - https://i.imgur.com/placeholder1.png
+  - https://i.imgur.com/placeholder2.png
+  - https://i.imgur.com/placeholder3.png
+releaseNotes: >-
+  Initial release of Inscription Tools for Umbrel. This version includes basic inscription management capabilities, wallet integration, and a clean user interface for working with Bitcoin Ordinals.
+dependencies:
+  - bitcoin
+path: ""
+defaultUsername: ""
+defaultPassword: "" 
