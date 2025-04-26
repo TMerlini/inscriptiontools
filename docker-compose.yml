@@ -1,0 +1,36 @@
+version: "3.7"
+
+services:
+  app:
+    build: 
+      context: ./app
+    image: ${APP_IMAGE:-community-store/app}
+    container_name: community-store-app
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR:-.data/app}:/data
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "3000:3000"
+    networks:
+      - community-store-network
+
+  api:
+    build:
+      context: ./api
+    image: ${API_IMAGE:-community-store/api}
+    container_name: community-store-api
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR:-.data/api}:/data
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "3001:3001"
+    networks:
+      - community-store-network
+
+networks:
+  community-store-network:
+    driver: bridge 
